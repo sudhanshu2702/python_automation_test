@@ -38,11 +38,6 @@ else:
     df_main['Date'] = [formatted_date_time]
     df_main['Message'] = 'Data added'
 
-
-df_out = pd.DataFrame()
-df_out[['Date','Message']] = [[formatted_date_time,'File added']]
-
-
 if __name__ == "__main__":
     logger.info(f"Token value: {SOME_SECRET}")
     logger.info(f"Data appended to the file - {formatted_date_time}")
