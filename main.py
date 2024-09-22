@@ -1,8 +1,12 @@
 import logging
 import logging.handlers
+from datetime import datetime
 import os
 
 import requests
+
+now = datetime.now()
+formatted_date_time = now.strftime("%Y-%m-%d %H:%M:%S")
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -26,9 +30,4 @@ if __name__ == "__main__":
     logger.info(f"Token value: {SOME_SECRET}")
 
     print("Data appended to the file.")
-
-    # r = requests.get('https://weather.talkpython.fm/api/weather/?city=Berlin&country=DE')
-    # if r.status_code == 200:
-    #     data = r.json()
-    #     temperature = data["forecast"]["temp"]
-    #     logger.info(f'Weather in Berlin: {temperature}')
+    logger.info(f"Data appended to the file - {formatted_date_time}")
