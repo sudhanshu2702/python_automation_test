@@ -10,6 +10,7 @@
 2024-09-22 12:12:12,265 - __main__ - INFO - Data appended to the file - 2024-09-22 12:12:12
 2024-09-22 12:36:40,780 - __main__ - INFO - Token value: Checking this line of code
 2024-09-22 12:36:40,781 - __main__ - INFO - Data appended to the file - 2024-09-22 12:36:40
+<<<<<<< HEAD
 2024-09-22 12:50:18,568 - __main__ - INFO - Token value: Checking this line of code
 2024-09-22 12:50:18,568 - __main__ - INFO - Data appended to the file - 2024-09-22 12:50:18
 2024-09-22 13:04:22,830 - __main__ - INFO - Token value: Checking this line of code
@@ -20,3 +21,11 @@
 2024-09-22 13:05:38,618 - __main__ - INFO - Data appended to the file - 2024-09-22 13:05:38
 2024-09-22 13:06:36,460 - __main__ - INFO - Token value: Checking this line of code
 2024-09-22 13:06:36,460 - __main__ - INFO - Data appended to the file - 2024-09-22 13:06:36
+=======
+2024-09-22 07:23:59,990 - __main__ - INFO - Token value: Checking this line of code
+2024-09-22 07:23:59,990 - __main__ - INFO - Data appended to the file - 2024-09-22 07:23:59
+2024-09-22 07:29:23,439 - __main__ - INFO - Token value: Checking this line of code
+2024-09-22 07:29:23,439 - __main__ - INFO - Data appended to the file - 2024-09-22 07:29:23
+2024-09-22 07:35:51,915 - __main__ - INFO - Token value: Checking this line of code
+2024-09-22 07:35:51,915 - __main__ - INFO - Data appended to the file - 2024-09-22 07:35:51
+>>>>>>> f4796ad8364bd4367701be423978174c5a6b5624
