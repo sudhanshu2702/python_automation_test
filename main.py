@@ -26,15 +26,15 @@ try:
 except KeyError:
     SOME_SECRET = "Token not available!"
 
+df_out = pd.DataFrame()
+df_out[['Date','Message']] = [[formatted_date_time,'File added']]
+
 
 if __name__ == "__main__":
     logger.info(f"Token value: {SOME_SECRET}")
     logger.info(f"Data appended to the file - {formatted_date_time}")
     SOME_SECRET = "Checking this line of code"
-    df_out = pd.DataFrame()
-    df_out['Date_Time'] = formatted_date_time
-    df_out['Message'] = 'Data appended to the file.'
-    df_out.to_csv('output.csv',index=False)
+    df_out.to_csv('Final_Output/output.csv',index=False)
 
 
 
