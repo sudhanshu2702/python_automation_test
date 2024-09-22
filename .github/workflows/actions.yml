@@ -26,7 +26,13 @@ jobs:
         env:
           SOME_SECRET: ${{ secrets.SOME_SECRET}}
         run: python main.py
-          
+
+      - name: Upload CSV as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: output-csv
+          path: output.csv  # Replace with your actual filename
+
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"

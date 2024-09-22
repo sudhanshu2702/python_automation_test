@@ -2,6 +2,7 @@ import logging
 import logging.handlers
 from datetime import datetime
 import os
+import pandas as pd
 
 import requests
 
@@ -30,3 +31,10 @@ if __name__ == "__main__":
     logger.info(f"Token value: {SOME_SECRET}")
     logger.info(f"Data appended to the file - {formatted_date_time}")
     SOME_SECRET = "Checking this line of code"
+    df_out = pd.DataFrame()
+    df_out['Date_Time'] = formatted_date_time
+    df_out['Message'] = 'Data appended to the file.'
+    df_out.to_csv('output.csv',index=False)
+
+
+
