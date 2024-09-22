@@ -28,6 +28,5 @@ except KeyError:
 
 if __name__ == "__main__":
     logger.info(f"Token value: {SOME_SECRET}")
-
-    print("Data appended to the file.")
     logger.info(f"Data appended to the file - {formatted_date_time}")
+    SOME_SECRET = "Checking this line of code"
